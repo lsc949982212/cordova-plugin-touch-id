@@ -29,7 +29,7 @@ TouchID.prototype.authenticate = function (msg, successCallback, errorCallback) 
     if (!msg) {
         msg = "Please authenticate via TouchID to proceed";
     }
-    exec(successCallback, errorCallback, "TouchID", "authenticate", [msg]);
+    cordova.exec(successCallback, errorCallback, "TouchID", "authenticate", [msg]);
 };
 
 TouchID.install = function () {
