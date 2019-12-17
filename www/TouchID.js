@@ -31,6 +31,9 @@ TouchID.prototype.authenticate = function (msg, successCallback, errorCallback) 
     }
     cordova.exec(successCallback, errorCallback, "TouchID", "authenticate", [msg]);
 };
+TouchID.prototype.callTouchWithPasswordDialog = function (message, successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, "TouchID", "callTouchWithPasswordDialog", [message]);
+};
 
 TouchID.install = function () {
   if (!window.plugins) {
