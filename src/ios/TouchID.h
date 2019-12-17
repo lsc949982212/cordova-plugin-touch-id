@@ -11,5 +11,6 @@
 - (void) verifyFingerprintWithCustomPasswordFallbackAndEnterPasswordLabel:(CDVInvokedUrlCommand*)command;
 
 - (void) askPassword:(CDVInvokedUrlCommand*)command;
+- (void) callTouchWithPasswordDialog:(CDVInvokedUrlCommand*)command;
 
 @end
